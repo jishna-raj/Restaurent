@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Primary Colors */
+:root {
+    --tomato: #FF6347; /* Tomato Red */
+    --secondary-color: #F5F5DC; /* Beige */
+    --accent-color: rgb(94, 9, 9); /* Forest Green */
+  }
+  
+  /* Text and Background */
+ body {
+    /* color: var(--tomato); */
+    overflow-x:hidden ;
+    
+
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(138, 127, 127, 0.19);
+    height: fit-content;
+    padding: 0%;
+
+   
+}
+.text{
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    margin-left: 0px;
+}
+#img1{
+    width: 10%;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 10px 23px;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-brand:hover{
+    color: #FF6347;
+}
+#a1{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#a1:hover {
+    color: #FF6347; 
+}
+#home{
+   
+    height: 500px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaLuodD443MafDrG4nMvo_M7OSlFv09wmNbw&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-fluid1{
+  width:600px;
+  height: 400px;
+}
+.img-fluid{
+  width:300px;
+  height: 200px;
+}
+.description{
+    text-align: justify;
+    margin-top: 30px;
+    border-style: dashed;
+    border-color: rgb(94, 9, 9);
+    padding: 20px;
+    color:  rgb(94, 9, 9);
+    font-family: "Grechen Fuemen", cursive;
+    font-weight: 800;
+    font-size: 20px
+}
+.description h1{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.animated-image {
+    transition: transform 0.2s ease-out;
+}
+
+.animated-image:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+.banner_container{
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 200px;
+}
+
+.banner_card{
+  padding: 1rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  
+}
+.banner_card:nth-child(1){
+  background-image:url('./images/burger1.jpg') ;
+}
+
+.banner_card:nth-child(2){
+  background-image:url("./images/burger2.jpg") ;
+}
+
+.banner_card:nth-child(3){
+  background-image:url('./images/burger3.jpg') ;
+
+}
+.banner_card p{
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #F5F5DC;
+}
+.banner_card h4{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #F5F5DC;
+}
+
+
+  /* Header and Footer */
+  header {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* Buttons */
+  .button {
+    background-color:#e43c1f; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    color: var(--accent-color);
+
+  }
+  .menu{
+    margin-top: 40px;
+  }
+  .card-text{
+    text-align: justify;
+    font-size: small;
+    color: black;
+    font-weight: 500;
+  }
+
+  .offer-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .offer-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-card h2 {
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .offer-card p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .offer-details {
+    margin-top: 20px;
+  }
+  
+  .offer-details h3 {
+    font-size: 1.3rem;
+    color: #555;
+  }
+  
+  .offer-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .offer-details ul li {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  .offer-details p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .offer-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  .offer-card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .offer-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  .event_content{
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    
+  }
+  .section_header{
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(94, 16, 16);
+
+  }
+  .event_details p{
+    text-align: justify;
+    color: black;
+    font-weight: 600;
+  }
+  .event_img img{
+    margin-left: 30px;
+    width: 1200px;
+    height: 400px;
+  }
+  .reservation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+.copy {
+    background-color: var(--accent-color);
+    color: white;
+  }
+
+  .footer{
+    margin-top: 30px;
+    background-image:url('https://img.freepik.com/premium-photo/burger-hamburger-cheeseburger-fast-food-advertising-banner-with-copy-space-your-branding_742418-17048.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    
+  }
+  .footer_logo img{
+    max-width: 200px;
+    
+  }
+  .footer_content{
+    /* margin-top:1rem ; */
+    display: grid;
+    gap: 2rem;
+  }
+  .footer_content p{
+    font-weight: 800;
+    color: #F5F5DC;
+    line-height: 1.75rem;
+    text-align: justify;
+    margin: 10px;
+  }
+  .footer_links{
+    color: #f9f9f9;
+    font-weight: 800;
+    margin-left: 30px;
+  }
+  .footer_links li span{
+    font-size: 1.25rem;
+    color: #f9f9f9;
+    margin-right: 12px;
+  }
+  .footer_socials{
+    margin-top: 2rem;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .footer_socials a {
+    display: inline-block; /* Ensures the anchor elements are block-level for proper hover area */
+    padding: 10px; /* Adjust padding as needed */
+    color: white; /* Set initial background color */
+    transition: background-color 0.3s ease; /* Adding transition effect */
+  }
+  
+  .footer_socials a:hover {
+    background-color: #e43c1f;
+  }
+  
